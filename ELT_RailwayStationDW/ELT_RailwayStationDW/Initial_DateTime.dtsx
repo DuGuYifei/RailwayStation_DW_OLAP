@@ -1,0 +1,93 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/4/2022 3:35:45 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-LM3G7RDU"
+  DTS:CreatorName="LAPTOP-LM3G7RDU\独孤逸飞"
+  DTS:DTSID="{D2F5FE05-40D3-47E3-976E-54FCBE070044}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="2052"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{CC17B7BB-8BB4-4A31-9D1A-2B40BCC45A89}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-LM3G7RDU\SQLEXPRESS.RailwayStationDW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6BF9B146-6A08-44BC-8DE5-B962458AC2D6}"
+      DTS:ObjectName="LAPTOP-LM3G7RDU\SQLEXPRESS.RailwayStationDW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-LM3G7RDU\SQLEXPRESS;Initial Catalog=RailwayStationDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Generate Date"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Generate Date"
+      DTS:DTSID="{3d54450a-5b92-4488-aebd-5b953198d458}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Generate Date"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6BF9B146-6A08-44BC-8DE5-B962458AC2D6}"
+          SQLTask:SqlStatementSource="DECLARE @date INT&#xA;SET @date = 20220120&#xA;WHILE @date &lt;= 20220131&#xA;BEGIN&#xA; insert into [Date] values(cast(@date as char), 2022, 1, @date - 20220100,'January')&#xA; SET @date = @date + 1&#xA;END&#xA;SET @date = 20220201&#xA;WHILE @date &lt;= 20220228&#xA;BEGIN&#xA; insert into [Date] values(cast(@date as char), 2022, 2, @date - 20220200,'February')&#xA; SET @date = @date + 1&#xA;END&#xA;SET @date = 20220301&#xA;WHILE @date &lt;= 20220320&#xA;BEGIN&#xA; insert into [Date] values(cast(@date as char), 2022, 3, @date - 20220300,'March')&#xA; SET @date = @date + 1&#xA;END" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Generate Time"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Generate Time"
+      DTS:DTSID="{bab8f295-4b34-438e-9bf9-0f946ff37b85}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Generate Time"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6BF9B146-6A08-44BC-8DE5-B962458AC2D6}"
+          SQLTask:SqlStatementSource="DECLARE @hour INT&#xA;DECLARE @minute INT&#xA;SET @hour = 0&#xA;while @hour &lt; 24&#xA;BEGIN&#xA; SET @minute = 0&#xA; while @minute &lt; 60&#xA; BEGIN&#xA;  INSERT INTO [Time] VALUES(@hour,@minute)&#xA;  SET @minute = @minute + 1&#xA; END&#xA; SET @hour = @hour + 1&#xA;END" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--此 CDATA 部分包含包的布局信息。该部分包括(x,y)坐标、宽度和高度之类的信息。-->
+<!--如果您手动编辑此部分并且出错，则可以删除此部分。 -->
+<!--该包仍将能够正常加载，但以前的布局信息将丢失，并且设计器将自动在设计图面上重新排列这些元素。-->
+<Objects
+  Version="8">
+  <!--下面的每个节点都将包含不会影响运行时行为的属性。-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Generate Date"
+          TopLeft="59.1666666997803,59.071428618869" />
+        <NodeLayout
+          Size="148,42"
+          Id="Package\Generate Time"
+          TopLeft="242.142860244731,60.7647058930782" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

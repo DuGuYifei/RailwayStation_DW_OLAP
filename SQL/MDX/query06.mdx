@@ -1,0 +1,5 @@
+WITH MEMBER [Measures].[AVG_occupancy] AS [Measures].[Sum Occupancy]/[Measures].[Route Occupancy Rate Count] 
+SELECT 
+NON EMPTY { [Measures].[AVG_occupancy] } ON COLUMNS, 
+NON EMPTY { ([Trains].[Train Class].[Train Class].ALLMEMBERS ) } ON ROWS 
+FROM [Railway Station DW]

@@ -1,0 +1,5 @@
+WITH MEMBER [Measures].[AVG_occupancy] AS [Measures].[Sum Occupancy]/[Measures].[Route Occupancy Rate Count] 
+SELECT 
+NON EMPTY { ([Measures].[AVG_occupancy],[Date].[Month Char].January),([Measures].[AVG_occupancy],[Date].[Month Char].February),([Measures].[AVG_occupancy],[Date].[Month Char].March) } ON COLUMNS, 
+NON EMPTY { ([Routes].[Departure Hub End Name].[Departure Hub End Name].ALLMEMBERS ) } ON ROWS 
+FROM [Railway Station DW]

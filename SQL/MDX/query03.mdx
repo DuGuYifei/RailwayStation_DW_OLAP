@@ -1,0 +1,5 @@
+WITH MEMBER [Measures].[Dis_time] AS [Measures].[ID Time Route Depart]-7*60+15 --7:15
+SELECT 
+{ [Measures].[Dis_time] } ON COLUMNS,
+[Routes].[ID R].[2] ON ROWS -- which route want to query
+FROM [Railway Station DW]

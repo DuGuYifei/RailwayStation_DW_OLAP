@@ -1,0 +1,944 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6bd15fb7-7a62-4f94-8090-f704115cb897" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Railway Station DW</ID>
+  <Name>Railway Station DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="42" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1315" scrolltop="-1892" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="55" x="23220" y="11472" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="018600009001905f010004cbcecce5" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Date" left="18174" top="-1038" logicalid="21" controlid="1" masterid="0" hint1="0" hint2="0" width="3278" height="3305" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ce0c0000e90c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Date" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Trains" left="2436" top="5551" logicalid="22" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000034060000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Trains" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Subroutes" left="-280" top="9289" logicalid="23" controlid="3" masterid="0" hint1="0" hint2="0" width="3808" height="2752" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e00e0000c00a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Subroutes" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Subroute_RemainTicket" left="8455" top="9914" logicalid="24" controlid="4" masterid="0" hint1="0" hint2="0" width="5038" height="2919" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ae130000670b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Subroute_RemainTicket" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Routes" left="-180" top="-873" logicalid="25" controlid="5" masterid="0" hint1="0" hint2="0" width="4720" height="4113" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00007012000011100000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Routes" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Time" left="21090" top="4695" logicalid="26" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Route_OccupancyRate" left="9547" top="1885" logicalid="27" controlid="7" masterid="0" hint1="0" hint2="0" width="4927" height="3777" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003f130000c10e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Route_OccupancyRate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="14174" top="215" logicalid="28" controlid="8" masterid="0" hint1="0" hint2="0" width="4300" height="2758" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Route_OccupancyRate-Date]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="7" sourceattachpoint="14" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18174" y="614" />
+              <point x="16324" y="614" />
+              <point x="16324" y="2673" />
+              <point x="14474" y="2673" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13193" top="1768" logicalid="29" controlid="9" masterid="0" hint1="0" hint2="0" width="7570" height="9355" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Subroute_RemainTicket-Date]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="7" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="20363" y="2267" />
+              <point x="20363" y="10823" />
+              <point x="13493" y="10823" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4637" top="4573" logicalid="30" controlid="10" masterid="0" hint1="0" hint2="0" width="5210" height="1478" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Route_OccupancyRate-Trains]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="7" sourceattachpoint="8" destattachpoint="28" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5036" y="5551" />
+              <point x="5036" y="5151" />
+              <point x="7291" y="5151" />
+              <point x="7291" y="4873" />
+              <point x="9547" y="4873" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2987" top="2940" logicalid="31" controlid="11" masterid="0" hint1="0" hint2="0" width="1693" height="3111" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Routes-Trains]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="5" sourceattachpoint="2" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3386" y="5551" />
+              <point x="3386" y="4396" />
+              <point x="4380" y="4396" />
+              <point x="4380" y="3240" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3228" top="10266" logicalid="32" controlid="12" masterid="0" hint1="0" hint2="0" width="5527" height="1407" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Subroute_RemainTicket-Subroutes]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="19" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3528" y="10665" />
+              <point x="5991" y="10665" />
+              <point x="5991" y="11373" />
+              <point x="8455" y="11373" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10674" top="6143" logicalid="33" controlid="13" masterid="0" hint1="0" hint2="0" width="11216" height="4071" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Subroute_RemainTicket-Time]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="4" sourceattachpoint="1" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="21490" y="6642" />
+              <point x="21490" y="8278" />
+              <point x="10974" y="8278" />
+              <point x="10974" y="9914" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4240" top="-316" logicalid="34" controlid="14" masterid="0" hint1="0" hint2="0" width="5607" height="3289" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Route_OccupancyRate-Routes]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="7" sourceattachpoint="21" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4540" y="83" />
+              <point x="7043" y="83" />
+              <point x="7043" y="2673" />
+              <point x="9547" y="2673" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="14174" top="4573" logicalid="35" controlid="15" masterid="0" hint1="0" hint2="0" width="7216" height="945" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Route_OccupancyRate-Time]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="7" sourceattachpoint="10" destattachpoint="29" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="21090" y="5118" />
+              <point x="17782" y="5118" />
+              <point x="17782" y="4873" />
+              <point x="14474" y="4873" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tickets" left="18143" top="13121" logicalid="36" controlid="16" masterid="0" hint1="0" hint2="0" width="3002" height="2502" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ba0b0000c6090000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Tickets" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2325" top="11542" logicalid="37" controlid="17" masterid="0" hint1="0" hint2="0" width="16118" height="3130" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Tickets-Subroutes]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="16" sourceattachpoint="11" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2724" y="12041" />
+              <point x="2724" y="14372" />
+              <point x="18143" y="14372" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="18864" top="1768" logicalid="38" controlid="18" masterid="0" hint1="0" hint2="0" width="1630" height="11653" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Tickets-Date]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="16" sourceattachpoint="3" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="19263" y="2267" />
+              <point x="19263" y="7694" />
+              <point x="20194" y="7694" />
+              <point x="20194" y="13121" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="18794" top="6143" logicalid="39" controlid="19" masterid="0" hint1="0" hint2="0" width="4746" height="7278" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Tickets-Time]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="16" sourceattachpoint="7" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="23140" y="6642" />
+              <point x="23140" y="9881" />
+              <point x="19094" y="9881" />
+              <point x="19094" y="13121" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-419" top="2741" logicalid="40" controlid="20" masterid="0" hint1="0" hint2="0" width="799" height="6848" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Subroutes-Routes]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="3" sourceattachpoint="1" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-20" y="3240" />
+              <point x="-20" y="6264" />
+              <point x="-26" y="6264" />
+              <point x="-26" y="9289" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1315</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-1892</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-280</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-1038</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>55</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="382f2fcf-b17b-4245-a3c8-26b74f9cbc37">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3a368e65-2cab-42eb-ba71-73b99486bf88">
+          <AttributeID>ID Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e7016375-2a2c-4096-8fd1-7f53d7a19474">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c20ae485-3856-4c95-8b04-3e816730fc00">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="296c977e-8568-4c6b-a2da-dfeb76166039">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="09cc13d5-3876-4845-bace-e7d0be75ed95">
+          <AttributeID>Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="52a3aca4-953a-49a3-a25f-6f5e2d9bb595">
+          <AttributeID>Month Char</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="7c7b58d5-8729-4989-9556-c28941630762">
+          <HierarchyID>层次结构</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="eb9a6dc8-a911-44c2-b59e-e9e9d953b468">
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <DimensionID>Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7150f530-4a85-4822-b583-649b100ab01a">
+          <AttributeID>ID Time</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0de4be26-0098-4977-ab71-3b59da3493a3">
+          <AttributeID>Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e3dca204-bcb1-4f09-88f9-baaf68f9ff62">
+          <AttributeID>Minute</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="55d1c833-4a17-4dc0-a37e-c06864e4bd1a">
+      <ID>Trains</ID>
+      <Name>Trains</Name>
+      <DimensionID>Trains</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0287fe1f-3e7c-492f-ab27-51b1f18c3ad4">
+          <AttributeID>ID Train</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bd6bbbec-b46b-45e6-88e5-6abab1d6e54c">
+          <AttributeID>Train Class</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3140c3bc-d7d9-425f-8a4f-102be0b3b11a">
+      <ID>Subroutes</ID>
+      <Name>Subroutes</Name>
+      <DimensionID>Subroutes</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b69d2b0b-3a79-447e-86f6-4b70d97c03c2">
+          <AttributeID>ID SR Surrogate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="718f2406-2224-42ba-86de-60eeb853a376">
+          <AttributeID>ID SR</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="83004227-648e-4a32-8dd2-1b89efac96c9">
+          <AttributeID>Ordinal Start</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="348008ad-b3a3-4ced-a5f4-84eb0c1ecfd7">
+          <AttributeID>Ordinal End</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eb90bc99-fdf1-4779-afaf-7812b55dca93">
+          <AttributeID>ID R</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a8404b3a-0bc7-477c-8566-a2e07514b492">
+          <AttributeID>Departure Hub End Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b16d902a-9a3d-4b52-9332-0e8792021741">
+          <AttributeID>Train Class</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ae63d33a-7fc7-4582-b370-0d0cd504cdf3">
+      <ID>Routes</ID>
+      <Name>Routes</Name>
+      <DimensionID>Routes</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fa8f6e95-ef3a-450d-9714-7b43f4a77ef7">
+          <AttributeID>ID R Surrogate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1803af6f-7a95-42c8-bdc4-49f9ba79f0f8">
+          <AttributeID>ID R</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6c6d0a2e-57e7-46f9-a242-a970693135da">
+          <AttributeID>Departure Hub End Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="59b41f8f-b4c8-4399-a72e-9bc182a42a88">
+          <AttributeID>Amount Seat</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6ab12b71-eb23-4bb7-84d8-b5e69d720cd4">
+          <AttributeID>Distance</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dc4ea94e-a6a6-41bd-b4b8-c26dac41730d">
+          <AttributeID>ID Train</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="8fc5b586-5d99-4e55-a6a0-d41440e98cea">
+      <ID>Route Occupancy Rate</ID>
+      <Name>Route Occupancy Rate</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0f00dd96-fabe-4fda-8bfb-97c538c6da19">
+          <ID>Distance</ID>
+          <Name>Max occupancy</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="1b80ad1c-6833-4dd7-85f4-d7f6e4932a0a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="54118de6-7b45-4ee3-9876-4d6576441b86">
+              <TableID>dbo_Route_OccupancyRate</TableID>
+              <ColumnID>Occupancy</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9482845e-8126-4565-b0eb-8f0241e3a192">
+          <ID>Amount Seat</ID>
+          <Name>Min occupancy</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source dwd:design-time-name="6484bda9-f6c6-4d8d-bcce-39a9a565a67d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="72c8a8b5-0263-4e96-981e-55b8675ec3c0">
+              <TableID>dbo_Route_OccupancyRate</TableID>
+              <ColumnID>Occupancy</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bcf82f72-4749-424c-b3fe-16d8d07a7710">
+          <ID>Occupancy</ID>
+          <Name>Sum Occupancy</Name>
+          <Source dwd:design-time-name="6f6ca32d-6323-4be5-a4cc-b3cc809c6543">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="68e4a607-5655-4841-8454-941bde148c02">
+              <TableID>dbo_Route_OccupancyRate</TableID>
+              <ColumnID>Occupancy</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5d23b7b1-bcd8-4627-9bbf-602bd60ae343">
+          <ID>Route Occupancy Rate Count</ID>
+          <Name>Route Occupancy Rate Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="4f5ac05a-47f8-40a9-b619-410c16e6404c">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="c0372848-c63b-4ac0-a07a-863859c32b85">
+              <TableID>dbo_Route_OccupancyRate</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="618ec4c6-d1ed-4c00-9515-5e26d297fc7d">
+          <ID>最大的 Amount Seat</ID>
+          <Name>Max Amount Seat</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="4a37ba26-7083-4245-b662-61856113fa7d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="695659aa-ba96-4f92-a2d5-3303e6671513">
+              <TableID>dbo_Route_OccupancyRate</TableID>
+              <ColumnID>Amount_Seat</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="315337c9-79e4-41d9-ab17-93187db9dd53">
+          <ID>ID Time Route Depart</ID>
+          <Name>ID Time Route Depart</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="357739a9-2cb5-4a3e-86b7-eec029fafcc2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5428658f-2673-49cf-9747-c403e6170be2">
+              <TableID>dbo_Route_OccupancyRate</TableID>
+              <ColumnID>ID_Time_RouteDepart</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Rolap</StorageMode>
+      <EstimatedRows>23552</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4d5b59cc-28b6-4797-8423-cef59809ca82">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="826ba08c-85da-4aac-ae59-7119c36925e9">
+              <AttributeID>ID Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4b3b9c12-e691-4737-9b85-4120e3ef4aff">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cfe45a6a-25c8-438b-ae23-94c18066dd2f">
+                    <TableID>dbo_Route_OccupancyRate</TableID>
+                    <ColumnID>ID_Date_RouteDepart</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8af10e96-f6cb-4bd5-b7f1-f036ec510348">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1613dee5-e989-4d3c-a76a-0fa9acee4dbc">
+              <AttributeID>ID Time</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7a0ae0ca-968c-4b3f-84e3-58413ed244b4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="900cb348-89a6-41b6-9495-ca58c8cc8c51">
+                    <TableID>dbo_Route_OccupancyRate</TableID>
+                    <ColumnID>ID_Time_RouteDepart</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="baf60e3e-0f68-4439-a288-b426452ade58">
+          <CubeDimensionID>Trains</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="852f5e23-74a1-4873-a461-fafac64c252a">
+              <AttributeID>ID Train</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ae15f7ec-af6f-4734-a9bc-ea41961fd65c">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a43d9c7c-1ec0-4209-8c72-4c4af69dd189">
+                    <TableID>dbo_Route_OccupancyRate</TableID>
+                    <ColumnID>ID_Train</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="88ca49d6-3035-47ca-a9dc-dcb4c75a8859">
+          <CubeDimensionID>Subroutes</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a8b06d66-c3dc-44e3-a78e-11a4ad99895b">
+              <AttributeID>ID R</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="214f1220-e737-4133-a8c7-52250acee6a9">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fd263935-189f-4e0f-a710-5ac4aacc6ecc">
+                    <TableID>dbo_Route_OccupancyRate</TableID>
+                    <ColumnID>ID_Route</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="79a408b3-9a83-4673-bd91-38fdee2b4eb5">
+          <CubeDimensionID>Routes</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cd406a15-e8dd-430c-b60d-361224818fde">
+              <AttributeID>ID R</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="29acec83-c6e4-4602-b6a7-e10cf9dabb48">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d29fbd5a-0871-4215-8f0f-8a0a428d2018">
+                    <TableID>dbo_Route_OccupancyRate</TableID>
+                    <ColumnID>ID_Route</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+      <ProactiveCaching dwd:design-time-name="558b1033-3bc5-4662-845c-021e2b72e7b5">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>PT0S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Enabled>true</Enabled>
+        <AggregationStorage>MolapOnly</AggregationStorage>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="491f2a73-91c4-4e1c-9b8f-32a92d591969">
+          <NotificationTechnique>Server</NotificationTechnique>
+        </Source>
+      </ProactiveCaching>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="c68543bd-1eb1-43b5-81d7-96a511035ab1">
+      <ID>Subroute Remain Ticket</ID>
+      <Name>Subroute Remain Ticket</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1e0d78bd-1a4a-4ae6-b6ac-d32f83b8c577">
+          <ID>Ticket Pass Through</ID>
+          <Name>Maximum Ticket Pass Through</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="294f0956-4f12-4d6e-8598-55158954037e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6c2dd780-fd13-40b9-a005-b86f7575984a">
+              <TableID>dbo_Subroute_RemainTicket</TableID>
+              <ColumnID>Ticket_PassThrough</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9b414dfa-f6d2-483b-b61e-00001879482d">
+          <ID>Minimum Ticket Pass Through</ID>
+          <Name>Minimum Ticket Pass Through</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source dwd:design-time-name="c5874a97-5533-4c0f-8337-fc12afec24bb">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b74caee4-4568-4617-993e-3563fdcea9a4">
+              <TableID>dbo_Subroute_RemainTicket</TableID>
+              <ColumnID>Ticket_PassThrough</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Holap</StorageMode>
+      <EstimatedRows>164864</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8e347537-d232-4c91-b072-9c8c9b58d55e">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2a730cff-e3b8-40b9-a694-d30afd915422">
+              <AttributeID>ID Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="23a47522-0b0d-4c41-b49b-5fca1f55dfe9">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="637b3080-48cf-4a56-b11e-9b7dd5f96596">
+                    <TableID>dbo_Subroute_RemainTicket</TableID>
+                    <ColumnID>ID_Date_SubRouteDepart</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="45ab298e-7ed2-4141-8bba-624af7236b41">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e1a45e04-6c09-4a91-aef0-595a33cb462a">
+              <AttributeID>ID Time</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b68d63c2-de89-4381-8204-66358ac6b96d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="683dbeb2-190b-4b6e-8d81-38c19b8463e0">
+                    <TableID>dbo_Subroute_RemainTicket</TableID>
+                    <ColumnID>ID_Time_SubRouteDepart</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d7cc139c-a32a-4e61-bfee-67bae4d03787">
+          <CubeDimensionID>Subroutes</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7a7834a6-82bf-44bf-8199-daed2886d03d">
+              <AttributeID>ID SR</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="94d0d1c7-d6b0-4fa2-881d-811d54a1b6d0">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f4c51646-7d21-4927-9f40-b0f7152c5b87">
+                    <TableID>dbo_Subroute_RemainTicket</TableID>
+                    <ColumnID>ID_Subroute</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+      <ProactiveCaching dwd:design-time-name="7eb2b304-71af-4808-a26f-9825735d6176">
+        <SilenceInterval>PT0S</SilenceInterval>
+        <Latency>PT0S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Enabled>true</Enabled>
+        <AggregationStorage>MolapOnly</AggregationStorage>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d6dd6883-0213-4aed-acab-eaddecd0341c">
+          <NotificationTechnique>Server</NotificationTechnique>
+        </Source>
+      </ProactiveCaching>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="29e69eaf-a48c-49fd-8997-8a67d2a81b4a">
+      <ID>Tickets</ID>
+      <Name>Tickets</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="bf318568-fc76-4675-b3fb-46d414eec278">
+          <ID>Tickets 计数</ID>
+          <Name>Count Tickets</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="11c2c9d1-1a8d-45f6-8c48-cf78ee6b3864">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="a4cdd317-1da3-41cf-a3eb-57a97394ef4a">
+              <TableID>dbo_Tickets</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Rolap</StorageMode>
+      <EstimatedRows>10272095</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a52452a1-b480-4d39-b0b0-20c2d89db25f">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="55a3bce1-e755-4d18-91ed-3193e1b8230c">
+              <AttributeID>ID Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b59e2847-0b35-4ff2-9035-c1b6467b0185">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ee488e8b-ef1c-4114-952f-d5fbae38fae9">
+                    <TableID>dbo_Tickets</TableID>
+                    <ColumnID>ID_Date_Sale</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dd7ceabe-46ed-4100-bcc1-34a08d5c1818">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b3756697-a845-4024-ae04-6980207dca8a">
+              <AttributeID>ID Time</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d220ff89-c5fc-4bad-bcf2-13189a631b6c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1cd35012-d362-4dd2-bfaf-2fc228637231">
+                    <TableID>dbo_Tickets</TableID>
+                    <ColumnID>ID_Time_Sale</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="29604214-616f-4981-b381-a2124db1b31b">
+          <CubeDimensionID>Subroutes</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f9b1a93e-6ffe-4197-a852-09ed073a38b4">
+              <AttributeID>ID SR</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6e6111c8-270a-4721-b939-0b9a58bde76e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f8174bc9-c2ac-45f0-8d86-a1cb0e9a3a65">
+                    <TableID>dbo_Tickets</TableID>
+                    <ColumnID>ID_SR</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+      <ProactiveCaching dwd:design-time-name="9b01c8e2-40d3-417c-b4e0-9f9bdb60f819">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>PT0S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Enabled>true</Enabled>
+        <AggregationStorage>MolapOnly</AggregationStorage>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="09c6f37f-89c9-42d6-80f7-cc88e97ff0a5">
+          <NotificationTechnique>Server</NotificationTechnique>
+        </Source>
+      </ProactiveCaching>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="f8b97591-2e8b-44f6-8dce-3f96059242d3">
+    <DataSourceViewID>Railway Station DW</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="88d1881b-d4f2-4693-9cd1-3f19f8a418e6">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+CALCULATE 命令控制多维数据集中叶单元的聚合。
+如果删除或修改该 CALCULATE 命令，会影响该多维数据集内的数据。
+仅应在手动指定多维数据集的聚合方式后编辑此命令。
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].Dis_time
+ AS [Measures].[ID Time Route Depart]-7*60+15, 
+VISIBLE = 1  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].Sum_Ticket
+ AS SUM( [Measures].[Count Tickets],[Routes].[ID R] ), 
+VISIBLE = 1  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+  <Kpis>
+    <Kpi dwd:design-time-name="e41e7204-0985-4b38-b894-75d48622c789">
+      <ID>KPI</ID>
+      <Name>Occupancy</Name>
+      <AssociatedMeasureGroupID>Route Occupancy Rate</AssociatedMeasureGroupID>
+      <Value>[Measures].[Sum Occupancy]/[Measures].[Route Occupancy Rate Count]</Value>
+      <Goal>( KPIValue( "Occupancy" ), ParallelPeriod([Date].[层次结构].[Day], 1,[Date].[层次结构].CurrentMember) ) * 1.001    </Goal>
+      <Status>IIf (KPIVALUE( "Occupancy" ) &gt; KPIGoal("Occupancy"), 1, -1)
+</Status>
+      <Trend>IIf ( KPIValue( "Occupancy" ) &gt; ( KPIValue( "Occupancy" ), ParallelPeriod([Date].[层次结构].[Day], 1,[Date].[层次结构].CurrentMember) ), 1, -1)</Trend>
+      <TrendGraphic>Status Arrow - Descending</TrendGraphic>
+      <StatusGraphic>Traffic Light</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="f7363dca-f614-4569-abd8-2c84512ae473">
+      <ID>KPI 1</ID>
+      <Name>RemainTicket</Name>
+      <Value>[Measures].[Max Amount Seat] - [Measures].[Maximum Ticket Pass Through]</Value>
+      <Goal>( KPIValue( "RemainTicket" ), ParallelPeriod ([Date].[层次结构].[Day], 1,[Date].[层次结构].CurrentMember) ) * 0.99</Goal>
+      <Status>IIf (KPIVALUE( "RemainTicket" ) &gt;= KPIGoal("RemainTicket"), -1, 1)</Status>
+      <Trend>IIf ( KPIValue( "RemainTicket" ) &gt;= ( KPIValue( "RemainTicket" ), ParallelPeriod ([Date].[层次结构].[Day], 1,[Date].[层次结构].CurrentMember) ), -1, 1)</Trend>
+      <TrendGraphic>Status Arrow - Descending</TrendGraphic>
+      <StatusGraphic>Traffic Light</StatusGraphic>
+    </Kpi>
+  </Kpis>
+</Cube>

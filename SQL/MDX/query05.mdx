@@ -1,0 +1,5 @@
+WITH MEMBER [Measures].[Route_Remain_Ticket] AS [Measures].[Max Amount Seat]-[Measures].[Maximum Ticket Pass Through] 
+SELECT 
+	NON EMPTY { ([Measures].[Route_Remain_Ticket])} ON COLUMNS,
+	NON EMPTY { ([Routes].[ID R].[1]) } ON ROWS 
+FROM [Railway Station DW]

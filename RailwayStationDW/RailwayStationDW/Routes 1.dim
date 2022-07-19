@@ -1,0 +1,181 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2f2dfbf0-e0ed-4a43-ae42-d855dee82fe2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Routes</ID>
+  <Name>Routes</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a0a4790d-4bc6-4e33-a427-f16113d5c69d">
+    <DataSourceViewID>Railway Station DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="c40d4bf6-e6f5-4071-b3c8-1dcf7c957980">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="4cab4799-eb4c-4afe-a7c9-463774da1836">
+      <ID>ID R Surrogate</ID>
+      <Name>ID R Surrogate</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7b5449f4-0e8b-4356-9424-6c462230c489">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f201bc1-1ea0-44e7-97a8-271f84e0ef7e">
+            <TableID>dbo_Routes</TableID>
+            <ColumnID>ID_R_surrogate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b877898a-a34e-4917-9932-7db23eb053b4">
+          <AttributeID>ID R</AttributeID>
+          <Name>ID R</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8622f1d0-468b-44da-9d0e-5e9ea4de8492">
+          <AttributeID>Departure Hub End Name</AttributeID>
+          <Name>Departure Hub End Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="96c6e3b5-5f77-4928-90c9-e77a2135aa58">
+          <AttributeID>Amount Seat</AttributeID>
+          <Name>Amount Seat</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="06f56347-e3bc-4bb7-b6be-06dc8d0fd684">
+          <AttributeID>Distance</AttributeID>
+          <Name>Distance</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="752734f8-d024-4dea-93bb-9bc625aaaab0">
+          <AttributeID>ID Train</AttributeID>
+          <Name>ID Train</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="35cd4b7b-1a54-4a4e-98b9-5a028f8391c9">
+      <ID>ID R</ID>
+      <Name>ID R</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3ea0bdae-0309-4f9a-abbb-e2f4028f82a9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f8d9c04-3980-440a-b356-ef087dd5cb37">
+            <TableID>dbo_Routes</TableID>
+            <ColumnID>ID_R</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e1e3f1a8-1e2f-4a9c-8e15-ec9d339ec388">
+      <ID>Departure Hub End Name</ID>
+      <Name>Departure Hub End Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="74d015d6-55e6-404c-98bb-ed9d76e013ca">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a6d62f66-2c2e-4f66-af65-24744af444d6">
+            <TableID>dbo_Routes</TableID>
+            <ColumnID>Departure_Hub_EndName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f6d05d54-db9a-4e18-a4f0-da0cde0952cc">
+      <ID>Amount Seat</ID>
+      <Name>Amount Seat</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5d52653e-a89f-4722-afd1-6e1547f8f553">
+          <DataType>WChar</DataType>
+          <DataSize>32</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="35b7cb3b-eba5-4b6d-a46d-cd92fbae092e">
+            <TableID>dbo_Routes</TableID>
+            <ColumnID>Amount_Seat</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ec6deab2-2143-4312-9658-2e8c73820ec8">
+      <ID>Distance</ID>
+      <Name>Distance</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="22919bf9-83fd-4d82-b081-371569b9a88a">
+          <DataType>WChar</DataType>
+          <DataSize>32</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c40f623e-2cf4-4916-a01b-c74b896345ab">
+            <TableID>dbo_Routes</TableID>
+            <ColumnID>Distance</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b1bea975-6f87-42cb-8b84-c256c3a0c09d">
+      <ID>ID Train</ID>
+      <Name>ID Train</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="67e21972-ef91-4832-87ab-14a2c8211c8d">
+          <DataType>WChar</DataType>
+          <DataSize>32</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2fc01dfe-7a40-4c08-b951-134824a43b19">
+            <TableID>dbo_Routes</TableID>
+            <ColumnID>ID_Train</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

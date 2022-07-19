@@ -1,0 +1,7 @@
+DROP TABLE Ticket
+DROP TABLE Customer
+DROP TABLE SubsetOfRoute
+DROP TABLE Route
+DROP TABLE Station
+DROP TABLE Train
+DROP TABLE Class_Train

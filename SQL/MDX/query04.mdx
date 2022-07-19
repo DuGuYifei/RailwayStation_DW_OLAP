@@ -1,0 +1,12 @@
+WITH MEMBER [Measures].[Sum_Ticket] AS SUM( [Measures].[Count Tickets],[Routes].[ID R] ) 
+SELECT 
+	NON EMPTY { [Measures].[Sum_Ticket] } ON COLUMNS, 
+	NON EMPTY { ([Routes].[ID R].[ID R].ALLMEMBERS ) } ON ROWS
+FROM ( 
+	SELECT ( [Time].[Hour].&[12] : [Time].[Hour].&[23] ) ON COLUMNS 
+	FROM ( 
+		SELECT ( { [Routes].[Departure Hub End Name].&[Bia艂a Podlaska - 艁owicz G艂贸wny - Warszawa Gda艅ska] } ) ON COLUMNS 
+		FROM [Railway Station DW]
+	)
+) 
+WHERE ( [Routes].[Departure Hub End Name].&[Bia艂a Podlaska - 艁owicz G艂贸wny - Warszawa Gda艅ska] )
