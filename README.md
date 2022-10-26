@@ -1,4 +1,7 @@
 # RailwayStation_DataWarehouse
+
+Multidimensional model.
+
 Simulate Data Warehouse of railway station for occupancy rate and remain ticket.
 
 Include: 
